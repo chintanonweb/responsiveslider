@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assemblyz - invite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel/css/owl.theme.default.min.css">
+    <script src="assets/OwlCarousel/js/owl.carousel.js"></script>
+    <script src="assets/OwlCarousel/js/owl.carousel.min.js"></script>
+    <style>
+        body {
+            background-image: url('assets/img/bg.png') !important;
+        }
+
+
+        .txt-img-blc {
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        /* Scrollbar Setting Start */
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #ffe100;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffe100;
+        }
+
+        /* Scrollbar Setting End */
+        .owl-carousel .owl-stage {
+            display: flex;
+        }
+
+        .owl-carousel .owl-item img {
+            height: 75vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shi-container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand font-weight-bold" href="/">Assemblyz</a>
+            <div class="navbar-nav ml-auto">
+                <img class="img-fluid" src="assets/img/assemblyz_icon_with_white_bg.svg" alt="Assemblyz" width="40px">
+            </div>
+        </nav>
+        <div class="owl-carousel owl-theme">
+            <div class="card">
+                <img class="img-fluid" src="https://dummyimage.com/720x1280/ffe100/ffffff.png" alt="Assemblyz">
+                <div class="txt-img-blc" style="min-height: 50px;">
+                    <p class="h6">Example of my group</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-fluid" src="https://dummyimage.com/720x1280/000000/ffffff.png" alt="Assemblyz">
+                <div class="txt-img-blc" style="min-height: 50px;">
+                    <p class="h6">I've been using it for the last 8 monthes</p>
+                </div>
+            </div>
+            <div class="card">
+                <iframe height="492" src="https://www.youtube.com/embed/tcd9smdKW3M" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <img class="img-fluid" src="https://dummyimage.com/720x1280/ffe100/ffffff.png" alt="Assemblyz">
+                <div class="txt-img-blc" style="min-height: 50px;">
+                    <p class="h6">Example of my group</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-fluid" src="https://dummyimage.com/720x1280/000000/ffffff.png" alt="Assemblyz">
+                <div class="txt-img-blc" style="min-height: 50px;">
+                    <p class="h6">I've been using it for the last 8 monthes</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2 mb-2 text-center">
+            <h6 class="text-uppercase font-weight-bold">We are available on Playstore</h6>
+            <div class="row">
+                <div class="col-12">
+                    <a target="_blank" href="#"><img src="assets/img/play.svg" width="150px" alt="Assemblyz"></a>
+                    <a target="_blank" href="#"><img src="assets/img/apple.svg" width="150px" alt="Assemblyz"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                center: true,
+                dots: false,
+                mouseDraggable: false,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
+
+</body>
+
+</html>
