@@ -1,0 +1,2 @@
+# responsiveslider
+Responsive Slider
